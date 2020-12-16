@@ -1,0 +1,14 @@
+#mybtn{
+	width: 200px;
+    height: 35px;
+    margin-top: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+
+    background: #054C92;
+    border: 1px solid rgba(5, 76, 146, 0.3);
+    border-color: 
+    color: #FFFFFF;
+    border-radius: 4px;
+}
+
