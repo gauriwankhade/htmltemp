@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="http://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.min.css">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap" rel="stylesheet">
+	<link href="pay1try.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+	<div id="Div1">
+		<img src="logo.png" alt="" id="logo">
+		<h2 style="text-align: left;">Government of Maharashtra</h2>
+		<a style="text-align: right;" id="username" href="#">Name surname<br></a>
+		<a style="text-align: right;" id="logout" href="#">Logout</a>
+		<div id="Div2">
+			<center>
+				<h3 style="text-align: left;" >Payments</h3>
+				<div class="container">
+					<div class="row content">
+						<div class="col-md-6 mb-3">
+							<p style="text-align: left;" class="text-muted">Step one</p>
+							<h3 style="text-align: left;">गुणवत्ता' Agency</h3>
+							<p style="text-align: left;" class="paragraph"> bngjubigub jgbgmgiofmvi jbg</p>
+							<p style="text-align: left;" class="price">$ 330000</p>
+						</div>
+						<div class="col-md-6 mb-3">
+							<form>
+								<div class="form-group">
+									<input type="text" name="username" class="form-control" placeholder="Enter UTR">
+								</div>
+								<button class="btn btn-class" onclick="" value="toggle class"/ id="mybtn">Submit</button>
+							</form>
+						</div>
+					</div>
+				</div>
+				<div class="toggleClass" id="steptwo">
+					<div class="container">
+						<div class="row content">
+							<div class="col-md-6 mb-3">
+								<p style="text-align: left;" class="text-muted">Step two</p>
+								<h3 style="text-align: left;">Second step</h3>
+								<p style="text-align: left;" class="paragraph"> bngjubigub jgbgmgiofmvi jbg</p>
+								<p style="text-align: left;" class="price">$ 330000</p>
+							</div>
+							<div id="Div5">
+								<p style="text-align: left;" class="text-muted">Step three</p>
+								<h3 style="text-align: left;">Step three</h3>
+								<div class="col-md-6 mb-3">
+									<form>
+										<div class="form-group">
+											<input type="text" name="username" class="form-control" placeholder="Enter UTR">
+										</div>
+										<button class="btn btn-class" onclick="" value="toggle class"/ id="mybtn">Submit</button>
+									</form>
+								</div>
+							</div>
+							<div id="Div6">
+								<p style="text-align: left;" class="text-muted">Step four</p>
+								<h3 style="text-align: left;">Step four</h3>
+							</div> 
+						</div>
+					</div>
+				</div>
+
+			</center>
+		</div>
+	</div>
+	<script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
+	<script type="text/javascript">
+		jQuery(document).ready(function($){
+
+
+			$( ".btn-class" ).click(function(e) {
+				e.preventDefault();
+				$(".mystyle").not(".toggleClass").slideUp();
+				$( ".toggleClass" ).slideToggle( "slow", function() {
+				});
+			});
+		});
+	</script>
+		<!--<script type="text/javascript">
+			$(document).ready(function(){
+				$("mybtn").click(function(){
+					$("myDIV").toggle("mystyle");
+				})
+			})
+		</script>-->
+	</body>
+	</html>
+
+
+
+
+
+<!--<div id="Div4">
+            <div class="col-md-8">
+              <p style="text-align: left;" class="text-muted">Step One</p>
+              <h4 style="text-align: left;">some marathi text</h4> 
+              <p style="text-align: left;"> bngjubigub jgbgmgiofmvi jbg</p>
+              <h4 style="text-align: left;">$ 330000</h4>
+            </div>
+            <div class="col-md-4">
+              <input type="text" name="" class="content" placeholder="Enter UTR" value=""><br>
+              <button type="button" class="btnSubmit">Submit</button>
+            </div>
+          </div>
